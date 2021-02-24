@@ -1,6 +1,10 @@
 import java.util.Arrays;
-
-//code taken from https://www.programmersought.com/article/48616580/ 
+/*
+ * Elizabeth Rios
+ * Algorithms
+ * Matrix Chain Order
+ */
+//used taken from https://www.programmersought.com/article/48616580/ 
 public class matrixChainOrder {
 
 	
