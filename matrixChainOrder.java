@@ -12,20 +12,6 @@ public class matrixChainOrder {
 		
 		public static void main(String[] args)
 		{
-			System.out.println("Hope this works: ");
-			System.out.println("Value tables is:");
-			for(int i=0; i<len; i++) {
-				for(int j = 0; j < len; j++) {
-					System.out.print(m[i][j] + " ");
-				}
-			}
-			
-			System.out.println("Decision tables is:");
-			for(int i=1; i<len; ++i) {
-				for(int j = 1; j < len; ++j) {
-					System.out.print(s[i][j] + " ");
-				}
-			}
 			
 			int value = 0; 
 			int optimal_value = Compute(a, m, s, value);
@@ -33,8 +19,25 @@ public class matrixChainOrder {
 			Compute(a, m, s, value );
 			System.out.println(optimal_value);
 			
-			 System.out.print("The order in which the matrices are multiplied is: ");
+			System.out.print("The order in which the matrices are multiplied is: ");
 			Display(s, name, 0, len-1);
+
+			System.out.println("Hope this works: ");
+			System.out.println("Value tables is:"); // just need to finish up here.
+			for(int i=0; i<len; i++) {
+				for(int j = 0; j < len; j++) {
+					System.out.print(m[i][j] + " ");
+				}
+				System.out.println();
+			}
+			
+			System.out.println("Decision tables is:");
+			for(int i=0; i<len; i++) {
+				for(int j = 0; j < len; j++) {
+					System.out.print(s[i][j] + " ");
+				}
+				System.out.println();
+			}
 		}
 		
 		public static int Compute(int[] a, int[][] m, int[][] s, int cost)
