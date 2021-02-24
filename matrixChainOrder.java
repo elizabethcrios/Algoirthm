@@ -12,22 +12,20 @@ public class matrixChainOrder {
 		
 		public static void main(String[] args)
 		{
-			/*
 			System.out.println("Hope this works: ");
 			System.out.println("Value tables is:");
-			for(int i=0; i<=len; i++) {
-				for(int j = 0; j <= len; j++) {
+			for(int i=0; i<len; i++) {
+				for(int j = 0; j < len; j++) {
 					System.out.print(m[i][j] + " ");
 				}
 			}
 			
 			System.out.println("Decision tables is:");
-			for(int i=1; i<=len; ++i) {
-				for(int j = 1; j <= len; ++j) {
+			for(int i=1; i<len; ++i) {
+				for(int j = 1; j < len; ++j) {
 					System.out.print(s[i][j] + " ");
 				}
 			}
-			*/
 			
 			int value = 0; 
 			int optimal_value = Compute(a, m, s, value);
